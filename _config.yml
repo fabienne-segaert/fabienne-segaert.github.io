@@ -1,0 +1,26 @@
+name: Fabienne Segaert
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+pygments: true
+
+description: Taallessen engels voor iedereen
+url: http://www.fabienne-segaert.be
+keywords:
+  - taallessen
+  - engels
+  - taalcoach
+  - toerisme
+  - privélessen
+  - bijlessen
+  - Oostende
+  - Brugge
+  - volwassenonderwijs
+  - secundair onderwijs
+
+link:
+  fb: https://www.facebook.com/fabienne.segaert
+  tw: https://twitter.com/fabiennesegaert
+  li: https://www.linkedin.com/in/fabiennesegaert
+  mail: fabienne@fabienne-segaert.be

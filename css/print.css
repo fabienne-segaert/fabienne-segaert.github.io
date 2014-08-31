@@ -1,0 +1,55 @@
+@media print {
+
+  iframe,
+  span.glyphicon.glyphicon-new-window,
+  #supersized,
+  .hidden-print {
+    display: none;
+  }
+
+  .show-print,
+  #footer,
+  #content {
+    display: inline;
+  }
+
+
+  #content h1 {
+    margin-top: 1em;
+  }
+
+  #footer {
+    position: relative;
+    top: 0; /* make the footer a header */
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  #footer span {
+    font-size: 0.7em;
+  }
+  #footer a {
+    font-size: inherit;
+  }
+  #footer span.show-print,
+  #footer a.show-print {
+    display: inline!important;
+  }
+  .show-print {
+    width: none!important;
+  }
+  #footer span, 
+  #footer a {
+    padding: 0 0.2em 0 0;
+    margin: 0;
+  }
+
+  a[href]:after {
+    content: none!important;
+  }
+  #content a {
+    border: none!important;
+  }
+
+
+}
