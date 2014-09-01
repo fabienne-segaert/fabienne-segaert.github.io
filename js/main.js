@@ -1,6 +1,10 @@
 (function ($){
     /* wait for the page to be loaded */
     $(function(){
+        var $content = $('#content');
+        
+        /* Make the single-page scroll work locally
+        --------------------------------------------------------- */
         var navbarHeight = $('#navbar').height();
         function filterPath(string) {
             return string
@@ -35,7 +39,17 @@
                         return false;
                     });
                 }
+                
+                //TODO menu addaptation! (and undo scrollspy?
             }
+        });
+        
+        /* Make external links go _blank
+        --------------------------------------------------------- */
+        var $extLinks = $content.find("a[href^='http']");
+        $extLinks.attr('target', '_blank');
+        $extLinks.each(function(){
+          $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
         });
 
     });

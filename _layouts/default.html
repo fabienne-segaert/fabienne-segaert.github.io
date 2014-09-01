@@ -41,7 +41,8 @@
     <link rel="stylesheet" href="/css/main.css">
 
   </head>
-  <body >
+    
+  <body data-spy="scroll" data-target=".navbar-spy">
     <header>
     <!-- Fixed navbar -->
     <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -55,8 +56,8 @@
           </button>
           <a class="navbar-brand" href="#">{{ site.name }}</a>
         </div>
-        <div class="navbar-collapse collapse"><nav>
-          <ul class="nav navbar-nav">
+        <div class="navbar-spy navbar-collapse collapse"><nav>
+          <ul class="nav navbar-nav" role="tablist">
             <li class="active"><a href="#welkom">Welkom</a></li>
             <li><a href="#aanbod">Aanbod</a></li>
             <li><a href="#overmezelf">Over mezelf</a></li>
@@ -73,7 +74,7 @@
     </div>
     </header>
 
-    <div class="container">
+    <div class="container" id="content">
 
         {{ content }} 
 
