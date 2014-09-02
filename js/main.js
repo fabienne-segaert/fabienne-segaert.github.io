@@ -12,8 +12,9 @@
                 .replace(/(index|default).[a-zA-Z]{3,4}$/,'') /* remove file.extension */
                 .replace(/\/$/,'');                           /* remove trailing slash */
         }
+        var $nav = $('nav');
         $('a[href*=#]').each(function() {
-            $this = $(this);
+            var $this = $(this);
             if ( filterPath(location.pathname) == filterPath(this.pathname)
                     && location.hostname == this.hostname
                     && this.hash.replace(/#/,'') 
@@ -21,6 +22,7 @@
                 var $targetId     = $(this.hash)
                   , targetName    = this.hash.slice(1)
                   , $targetAnchor = $('[name=' + targetName +']')
+                  , $navItem      = $('a[href=#'+ targetName +']').parent('li')
                   , $target = $targetId.length ? $targetId : 
                                 $targetAnchor.length ? $targetAnchor : false;
                 if ($target) {
@@ -36,11 +38,15 @@
                             d.parentNode.removeChild(d);
                         }, 10);
                         window.location.hash = targetName
+
+                        //TODO menu addaptation! (and undo scrollspy?
+                        if ($navItem.length && $nav.length) {
+                            $('.active', $nav).removeClass('active');
+                            $navItem.addClass('active');
+                        }
                         return false;
                     });
                 }
-                
-                //TODO menu addaptation! (and undo scrollspy?
             }
         });
         
