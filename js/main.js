@@ -12,7 +12,46 @@
                 .replace(/(index|default).[a-zA-Z]{3,4}$/,'') /* remove file.extension */
                 .replace(/\/$/,'');                           /* remove trailing slash */
         }
+        
         var $nav = $('nav');
+        function currentHash() {
+            var currentHash = window.location.hash;
+            if (currentHash && currentHash.length) {
+                 return currentHash.slice(1);
+            }
+            //else
+            return;
+        }
+        function activateMenu($menu) {
+            if($menu === undefined) {
+                var name = currentHash();
+                if (name && name.length) {
+                    $menu = targets[name].menu;
+                }
+            }
+            if ($menu.length && $nav.length) {
+                $('.active', $nav).removeClass('active');
+                $menu.addClass('active');
+            }
+        }
+        
+        var targets = {};
+        function gotoHash(hash) {
+            var name = hash || currentHash();
+            if (!(name && name.length && targets[name])) { return; }
+            
+            var targetData = targets[name]
+              , $target    = targetData.target
+              , $menu      = targetData.menu
+            ;
+            var offset = $target.offset().top - navbarHeight;
+            
+            $('html, body').animate({scrollTop: offset}, 1000, "swing", function(){
+                activateMenu();
+            });
+            window.location.hash = name;
+        }
+        
         $('a[href*=#]').each(function() {
             var $this = $(this);
             if ( filterPath(location.pathname) == filterPath(this.pathname)
@@ -22,41 +61,32 @@
                 var $targetId     = $(this.hash)
                   , targetName    = this.hash.slice(1)
                   , $targetAnchor = $('[name=' + targetName +']')
-                  , $navItem      = $('a[href=#'+ targetName +']').parent('li')
+                  , $menuItem     = $('a[href=#'+ targetName +']').parent('li')
                   , $target = $targetId.length ? $targetId : 
                                 $targetAnchor.length ? $targetAnchor : false;
                 if ($target) {
-                    var targetOffset = $target.offset().top - navbarHeight;
+                    // initialize the set of targets
+                    targets[targetName] = {
+                        target: $target
+                      , menu  : $menuItem
+                    };
+                    // register the onclick
                     $this.click(function() {
-                        $('html, body').animate({scrollTop: targetOffset}, 1000);
-                        var d = document.createElement("div");
-                        d.style.height = "101%";
-                        d.style.overflow = "hidden";
-                        document.body.appendChild(d);
-                        window.scrollTo(0,targetOffset);
-                        setTimeout(function() {
-                            d.parentNode.removeChild(d);
-                        }, 10);
-                        window.location.hash = targetName
-
-                        //TODO menu addaptation! (and undo scrollspy?
-                        if ($navItem.length && $nav.length) {
-                            $('.active', $nav).removeClass('active');
-                            $navItem.addClass('active');
-                        }
+                        gotoHash(targetName);
                         return false;
                     });
                 }
             }
         });
         
+        gotoHash();
+        
         /* Make external links go _blank
         --------------------------------------------------------- */
         var $extLinks = $content.find("a[href^='http']");
         $extLinks.attr('target', '_blank');
         $extLinks.each(function(){
-          $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
+            $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
         });
-
     });
 })(jQuery);

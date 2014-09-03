@@ -40,6 +40,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
+    <!-- Custom favicon -->
+    <link rel="icon" type="image/png" href="/img/gb.png">
+
   </head>
     
   <body data-spy="scroll" data-target=".navbar-spy">
@@ -58,7 +61,7 @@
         </div>
         <div class="navbar-spy navbar-collapse collapse"><nav>
           <ul class="nav navbar-nav" role="tablist">
-            <li class="active"><a href="#welkom">Welkom</a></li>
+            <li><a href="#welkom">Welkom</a></li>
             <li><a href="#aanbod">Aanbod</a></li>
             <li><a href="#overmezelf">Over mezelf</a></li>
             <li><a href="#prijzen">Prijzen</a></li>
@@ -75,9 +78,7 @@
     </header>
 
     <div class="container" id="content">
-
         {{ content }} 
-
     </div> <!-- /container -->      
 
     <!--
@@ -87,7 +88,8 @@
 
     <!-- Java script to load - at the end of doc for faster page-loading
     ================================================== -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type='text/javascript'>
       window.jQuery || document.write("<script src='/js/jquery-1.11.0.min.js'><\/script>");
     </script>
