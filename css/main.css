@@ -1,6 +1,14 @@
 @import url("bootstrap.min.css");
+@import url("../fonts/stylesheet.css");
 /*
 @import url("//fonts.googleapis.com/css?family=EB+Garamond"));
+*/
+
+/*
+wit    rgba( 255, 255, 255, 0.95)
+geel   rgba( 233, 224,   0, 1.00)
+groen  rgba(  47, 179, 166, 1.00)
+rood   rgba( 228,  33, 105, 1.00)
 */
 
 body {
@@ -21,4 +29,60 @@ body {
     margin-bottom: 20px;
 
     background: rgba(255,255,255,0.95);
+}
+.fawe {
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.natscr {
+    display: inline-block;
+    font-family: "NaturalScript";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fmslab,.fmsans {
+    font-size: 24px;
+}
+.fmslab .w100 {
+    font-family: "MuseoSlab100";
+}
+.fmslab .w300 {
+    font-family: "MuseoSlab300";
+}
+.fmslab .w500 {
+    font-family: "MuseoSlab500";
+}
+.fmslab .w700 {
+    font-family: "MuseoSlab700";
+}
+.fmslab .w900 {
+    font-family: "MuseoSlab900";
+}
+.fmslab .w1000 {
+    font-family: "MuseoSlab1000";
+}
+.fmsans .w100 {
+    font-family: "MuseoSans100";
+}
+.fmsans .w300 {
+    font-family: "MuseoSans300";
+}
+.fmsans .w500 {
+    font-family: "MuseoSans500";
+}
+.fmsans .w700 {
+    font-family: "MuseoSans700";
+}
+.fmsans .w900 {
+    font-family: "MuseoSans900";
 }

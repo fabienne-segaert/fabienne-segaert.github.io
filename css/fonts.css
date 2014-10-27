@@ -1,0 +1,88 @@
+/*
+    font-awesome gebruikt voor zijn fijne iconen
+  - zie http://fortawesome.github.io/Font-Awesome/cheatsheet/
+*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+    MuseoSlab - a nice serif for this site
+*/
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_100.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_100italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_300.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_300italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_500.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_500italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_700.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_700italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_900.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_900italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_1000.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('../fonts/MuseoSlab_1000italic.otf') format('opentype');
+    font-weight: 1000;
+    font-style: normal;
+}
+
