@@ -1,24 +1,18 @@
-<div class="jumbotron">
-<p class="pull-right">
-  <a class="btn btn-lg btn-primary" href="#contact" role="button">Neem Contact &raquo;</a>
-</p>
 
-#Let's Talk
 
-Taallessen Engels voor iedereen op elk niveau
+img: logo
 
-Privélessen en praktijkgerichte conversatieklassen voor volwassenen
 
-Bijlessen voor leerlingen en studenten
+Taallessen _ENGELS_
+voor _iedereen_ 
+en op _elk niveau_
 
-Engels voor de toeristische sector 
 
-</div>
 
-* kortlopende cursussen tijdens de voor- of namiddag of 's avonds
-* groepjes tot 8 personen
-* ongedwongen, gezellige sfeer
-* persoonlijke aanpak op maat
-* de betere bijles aan een goeie prijs
-* praktijkgericht en directe feedback
-gratis verkennend gesprek voor niveaubepaling!
+Open deur zaterdag 8 november 10 tot 18 uur Derbylaan 7 bis | Oostende
+
+Laat even weten dat je komt
+
+
+img: nice to meet you
+

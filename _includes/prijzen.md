@@ -1,25 +1,34 @@
 
-##PRIJZEN
 
-###VOLWASSENEN
+__Volwassenen__ - Kortlopende cursussen, privélessen en  
+conversatieklassen in groepjes tot 6 personen  
 
-4O Euro per uur
+_Privéles_ € 35 per uur
 
-75 Euro per twee uur
-
-
-Kortlopende lessenreeks in groep: 430 Euro voor 6 lessen (2 uur)
-
-###LEERLINGEN EN STUDENTEN
-
-35 Euro per uur
-
-65 Euro per twee uur
-
-###ENGELS VOOR DE TOERISTISCHE SECTOR
-
-praktijkgerichte coaching voor de horeca, bij u ter plaatse
+_Conversational English_ 6 weken, reeks van anderhalf uur op basis van 6 cursisten € 90
 
 
+__Leerlingen en studenten__ - De betere bijles op maat  
+met persoonlijke aanpak en begeleiding bij vakantiewerk,  
+opfriscursus Engels voor de start van het nieuwe schooljaar  
 
-prijsofferte op aanvraag
+_Privéles leerlingen secundair_ € 30 per uur
+
+
+inset:
+
+Inbegrepen:
+Lesmateriaal, Engelse thee en koekjes,  
+koffie of frisdrank  
+
+
+__Engels voor de toeristische sector__
+Praktijkgerichte coaching voor de horeca op de werkvloer  
+
+_Prijsofferte op aanvraag_
+
+
+
+
+img: asset-pijl "toeristische sector" 
+

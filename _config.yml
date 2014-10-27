@@ -1,4 +1,4 @@
-name: Fabienne Segaert
+name: Let's Talk Taalcoaching
 
 markdown: redcarpet
 redcarpet:
@@ -6,7 +6,7 @@ redcarpet:
 pygments: true
 
 description: Taallessen engels voor iedereen
-url: http://www.fabienne-segaert.be
+url: http://www.lets-talk-taalcoaching.be
 keywords:
   - taallessen
   - engels
@@ -23,4 +23,4 @@ link:
   fb: https://www.facebook.com/fabienne.segaert
   tw: https://twitter.com/fabiennesegaert
   li: https://www.linkedin.com/in/fabiennesegaert
-  mail: fabienne@fabienne-segaert.be
+  mail: fabienne@letstalk-taalcoaching.be

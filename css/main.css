@@ -4,12 +4,21 @@
 */
 
 body {
-    padding-top: 70px;
-    padding-bottom: 100%;
-    position: relative;
+    /*
+    padding-top:      70px;
+    padding-bottom:   100%;
+    position:         relative;
+    */
     background-image: url('/img/bck-pattern-rose.jpg');
 }
 .page {
-    padding-top: 1em;
+    padding-top:    2em;
+    padding-bottom: 2em;
+    padding-left:   3em;
+    padding-right:  3em;
+
+    margin-top:    50px;
+    margin-bottom: 20px;
+
     background: rgba(255,255,255,0.95);
 }
