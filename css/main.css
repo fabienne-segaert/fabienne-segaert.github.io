@@ -11,6 +11,7 @@ groen  rgba(  47, 179, 166, 1.00)
 rood   rgba( 228,  33, 105, 1.00)
 */
 
+
 body {
     /*
     padding-top:      70px;
@@ -30,12 +31,36 @@ body {
 
     background: rgba(255,255,255,0.95);
 }
+
+
+.fnt_wht {
+    color: rgba( 255, 255, 255, 1.00);
+}
+.fnt_ylw {
+    color: rgba( 233, 224,   0, 1.00);
+}
+.fnt_grn {
+    color: rgba(  47, 179, 166, 1.00);
+}
+.fnt_red {
+    color: rgba( 228,  33, 105, 1.00);
+}
+.bck_ylw {
+    background-color: rgba( 233, 224,   0, 1.00);
+}
+.bck_grn {
+    background-color: rgba(  47, 179, 166, 1.00);
+}
+.bck_red {
+    background-color: rgba( 228,  33, 105, 1.00);
+}
+
 .fawe {
     display: inline-block;
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18pt;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,13 +70,13 @@ body {
     font-family: "NaturalScript";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 45pt;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .fmslab,.fmsans {
-    font-size: 24px;
+    font-size: 18pt;
 }
 .fmslab .w100 {
     font-family: "MuseoSlab100";

@@ -1,4 +1,5 @@
 
+<!--
 ##font testing
 
 <div>
@@ -6,7 +7,7 @@
 </div>
 
 <div>
-<span class="natscr">test NaturalScript for Contact and Bijzonder paperclips</span>
+<span class="natscr">test NaturalScript for paperclips</span>
 </div>
 
 
@@ -25,22 +26,43 @@
 <span  class="w700">weights   <em>(700)</em> </span>
 <span  class="w900">getting thicker<em>(900)</em> </span>
 </div>
-
-
-----
+-->
 
 img: logo
 
+<span style='font-family: "MuseoSlab100"; font-size:19pt;'>
+Oostende
+</span>
 
-Taallessen _ENGELS_
-voor _iedereen_ 
-en op _elk niveau_
+<span style='font-family: "MuseoSans100"'>
+    <span style='font-size: 32pt;'>Taallessen </span> 
+    <span style='font-family: "MuseoSans500"; font-size: 38pt;'>ENGELS </span> 
+    <span style='font-size: 28pt;'>voor </span> 
+    <span style='font-family: "MuseoSans500"; font-size: 38pt;'>iedereen </span> 
+    <span style='font-size: 28pt;'>en </span> 
+    <span style='font-size: 28pt;'>op </span> 
+    <span style='font-family: "MuseoSans500"; font-size: 38pt;'>elk niveau</span> 
+</span>
 
 
-
-Open deur zaterdag 8 november 10 tot 18 uur Derbylaan 7 bis | Oostende
-
-Laat even weten dat je komt
+<div id="opendeur" style="text-align: center;">
+    <span style='font-family: "MuseoSlab700";'>
+        <span class="fnt_grn">
+            <span style='font-family: "MuseoSlab1000"; font-size: 34pt;'>Open </span> 
+            <span style='font-size: 34pt;'>deur </span> 
+        </span>
+        <br>
+        <span style='font-size: 32pt;'>
+            zaterdag 8 november 
+            <br>
+            10 tot 18 uur 
+        </span> 
+        <br>
+        <span style='font-family: "MuseoSlab300"; font-size: 27pt;'>Derbylaan 7bis | Oostende </span> 
+        <br>
+        <span style='font-size: 20pt;'>Laat even weten dat je komt </span> 
+    </span>
+</div>
 
 
 img: nice to meet you

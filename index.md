@@ -6,7 +6,7 @@ layout: default
     {% include welkom.md %}
 </article>  
 
-<article class="page" name="quotes" id="quotes" data-clips='["contact"]' data-back='{"color":"green"}'>
+<article class="page bck_grn" name="quotes" id="quotes" data-clips='["contact"]' data-back='{"color":"green"}'>
     {% include quotes.md %}
 </article>  
 
@@ -14,11 +14,11 @@ layout: default
     {% include aanbod.md %}
 </article>  
 
-<article class="page" name="sterktes" id="sterktes" data-clips='["special", "contact"]' data-back='{"color": "green"}' >
-    {% include sterktes.md %}
+<article class="page bck_grn" name="troeven" id="troeven" data-clips='["special", "contact"]' data-back='{"color": "green"}' >
+    {% include troeven.md %}
 </article>  
 
-<article class="page" name="prijzen" id="prijzen" data-clips='["contact"]' data-back='{"img":"bigben"}'>
+<article class="page bck_grn" name="prijzen" id="prijzen" data-clips='["contact"]' data-back='{"img":"bigben"}'>
     {% include prijzen.md %}
 </article>  
 
