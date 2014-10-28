@@ -1,5 +1,5 @@
 
-<ul id="quotes" style='font-family: "MuseoSlab500"; font-size: 38pt;'>
+<ul id="quotes" class="fnt_serif500 fnt_s38">
 
 <li>
 Ik heb (klein)kinderen in het buitenland en wil hun taal beter beheersen

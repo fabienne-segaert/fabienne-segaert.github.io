@@ -1,9 +1,9 @@
 
-<span style='font-family="MuseoSlab500"; font-size: 21pt;'>
+<span class="fnt_serif500 fnt_s21">
     Let’s Talk is Fabienne Segaert
 </span>
 
-<span style='font-family="MuseoSlab300"; font-size: 16pt;'>
+<span class="fnt_serif300 fnt_s16">
     Bachelor Nederlands-Engels, jarenlange  
     ervaring als taalcoach met verschillende  
     taalniveaus, conversatieklassen en business  
@@ -16,10 +16,10 @@
 
 
 <div class="bck_grn">
-    <span style='font-family: "MuseoSlab300"; font-size: 24pt;'>
+    <span class="fnt_serif300 fnt_s24">
         Lets's Talk  <br>
     </span>
-    <span class="fnt_wht" style='font-family: "MuseoSans500"; font-size: 16pt;'>
+    <span class="fnt_wht fnt_serif500 fnt_s16">
         <br>
         Derbylaan 7 bis <br>
         8400 Oostende  <br>
@@ -33,7 +33,7 @@
 
 
 
-<span style='font-family="MuseoSlab700"; font-size: 12pt; color: rgba(127, 127, 127, 1.00)'>
+<span class="fnt_serif700 fnt_s12 fnt_gry">
 Wij werken samen met ‘t Iengels Wienkeltje en met  
 The Green Man Whiskycafé. Wilt u op de hoogte blijven  
 van onze acties, vul dan het formulier in onder _contact_

@@ -1,4 +1,4 @@
-<ul id="troeven" class="fnt_wht" style='font-family: "MuseoSlab700"; font-size: 19pt;'>
+<ul id="troeven" class="fnt_wht fnt_serif700 fnt_s19">
 
 <li>
 Persoonlijke aanpak op maat 

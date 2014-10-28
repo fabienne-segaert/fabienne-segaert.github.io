@@ -3,6 +3,6 @@ img: logo
 img: gratis
 
 
-<span style='font-family: "MueseoSans100"; font-size: 16pt;'>
+<span class="fnt_sans100 fnt_s16 bck_ylw">
 verkennend gesprek voor niveaubepaling
 </span>

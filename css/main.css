@@ -13,12 +13,15 @@ rood   rgba( 228,  33, 105, 1.00)
 
 
 body {
-    /*
-    padding-top:      70px;
-    padding-bottom:   100%;
-    position:         relative;
-    */
+    font-size: 120%;
     background-image: url('/img/bck-pattern-rose.jpg');
+    background-attachment: fixed;
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .page {
     padding-top:    2em;
@@ -29,85 +32,41 @@ body {
     margin-top:    50px;
     margin-bottom: 20px;
 
-    background: rgba(255,255,255,0.95);
+    background: rgba( 255, 255, 255, 0.95);
 }
 
 
-.fnt_wht {
-    color: rgba( 255, 255, 255, 1.00);
-}
-.fnt_ylw {
-    color: rgba( 233, 224,   0, 1.00);
-}
-.fnt_grn {
-    color: rgba(  47, 179, 166, 1.00);
-}
-.fnt_red {
-    color: rgba( 228,  33, 105, 1.00);
-}
-.bck_ylw {
-    background-color: rgba( 233, 224,   0, 1.00);
-}
-.bck_grn {
-    background-color: rgba(  47, 179, 166, 1.00);
-}
-.bck_red {
-    background-color: rgba( 228,  33, 105, 1.00);
-}
+.fnt_wht {            color: rgba( 255, 255, 255, 1.00); }
+.fnt_ylw {            color: rgba( 233, 224,   0, 1.00); }
+.fnt_grn {            color: rgba(  47, 179, 166, 1.00); }
+.fnt_red {            color: rgba( 228,  33, 105, 1.00); }
+.fnt_gry {            color: rgba( 127, 127, 127, 1.00); }
+.bck_ylw { background-color: rgba( 233, 224,   0, 1.00); }
+.bck_grn { background-color: rgba(  47, 179, 166, 1.00); }
+.bck_red { background-color: rgba( 228,  33, 105, 1.00); }
 
-.fawe {
-    display: inline-block;
-    font-family: "FontAwesome";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18pt;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.natscr {
-    display: inline-block;
-    font-family: "NaturalScript";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 45pt;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.fmslab,.fmsans {
-    font-size: 18pt;
-}
-.fmslab .w100 {
-    font-family: "MuseoSlab100";
-}
-.fmslab .w300 {
-    font-family: "MuseoSlab300";
-}
-.fmslab .w500 {
-    font-family: "MuseoSlab500";
-}
-.fmslab .w700 {
-    font-family: "MuseoSlab700";
-}
-.fmslab .w900 {
-    font-family: "MuseoSlab900";
-}
-.fmslab .w1000 {
-    font-family: "MuseoSlab1000";
-}
-.fmsans .w100 {
-    font-family: "MuseoSans100";
-}
-.fmsans .w300 {
-    font-family: "MuseoSans300";
-}
-.fmsans .w500 {
-    font-family: "MuseoSans500";
-}
-.fmsans .w700 {
-    font-family: "MuseoSans700";
-}
-.fmsans .w900 {
-    font-family: "MuseoSans900";
-}
+.fnt_awe      {    font-family: "FontAwesome";   }
+.fnt_natscr   {    font-family: "NaturalScript"; }
+.fnt_serif100 {    font-family: "MuseoSlab100";  }
+.fnt_serif300 {    font-family: "MuseoSlab300";  }
+.fnt_serif500 {    font-family: "MuseoSlab500";  }
+.fnt_serif700 {    font-family: "MuseoSlab700";  }
+.fnt_serif900 {    font-family: "MuseoSlab900";  }
+.fnt_serif1000{    font-family: "MuseoSlab1000"; }
+.fnt_sans100  {    font-family: "MuseoSans100";  }
+.fnt_sans300  {    font-family: "MuseoSans300";  }
+.fnt_sans500  {    font-family: "MuseoSans500";  }
+.fnt_sans700  {    font-family: "MuseoSans700";  }
+.fnt_sans900  {    font-family: "MuseoSans900";  }
+.fnt_s12      {    font-size: 1.00em; }
+.fnt_s14      {    font-size: 1.17em; }
+.fnt_s16      {    font-size: 1.33em; }
+.fnt_s18      {    font-size: 1.50em; }
+.fnt_s19      {    font-size: 1.58em; }
+.fnt_s21      {    font-size: 1.75em; }
+.fnt_s24      {    font-size: 2.00em; }
+.fnt_s28      {    font-size: 2.33em; }
+.fnt_s32      {    font-size: 2.67em; }
+.fnt_s34      {    font-size: 2.83em; }
+.fnt_s38      {    font-size: 3.17em; }
+.fnt_s45      {    font-size: 3.75em; }
