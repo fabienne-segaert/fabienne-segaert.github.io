@@ -46,6 +46,7 @@ body {
 }
 
 .page {
+    margin-top: 2em;
     background: rgba( 255, 255, 255, 0.95);
 }
 
