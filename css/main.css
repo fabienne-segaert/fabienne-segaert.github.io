@@ -61,6 +61,12 @@ img {
 article {
     margin-bottom: 12em;
 }
+a {
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
 
 /*
  *  First page elements -- Welcome
@@ -142,7 +148,27 @@ article#troeven {
 article#prijzen {
     background-image: url('../img/bck-bigben.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left bottom;
     background-size: cover;
     min-height: 65em;
+}
+/*
+ * Sixth Page Elements - contact
+ */
+article#contact div.page{
+    padding-top: 3em;
+}
+article#contact div#fabienne {
+    padding-left: 0px;
+}
+article#contact div#contacts {
+    background-image: url('/img/bck-contact-bigben.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    line-height: 3em;
 }
