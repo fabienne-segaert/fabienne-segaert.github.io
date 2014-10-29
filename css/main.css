@@ -73,7 +73,8 @@ a:hover {
  *  First page elements -- Welcome
  */
 div.row.spaced {
-    padding-top: 11em;
+    padding-top: 7em;
+    padding-bottom: 4em;
 }
 div#slogan {
 }
@@ -107,7 +108,7 @@ article#quotes {
     margin-top: 15em;
 }
 div#quotes {
-    margin-top: 5.5em;
+    margin-top: 1px;
     padding-top: 5.5em;
     padding-bottom: 2em;
     background-image: url('../img/quotes.png');
@@ -181,4 +182,9 @@ article#contact div#contacts img.bg {
  * Hidden - page #7 - form
  */
 article#form {
+}
+
+img.tab_horiz {
+    position: absolute;
+    bottom: 20%;
 }
