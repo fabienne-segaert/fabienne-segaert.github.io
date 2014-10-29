@@ -125,7 +125,7 @@ div#quotes {
 article#aanbod {
     background-image: url('../img/bck-lessituatie-thee.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     min-height: 65em;
 }
@@ -149,27 +149,36 @@ article#troeven {
 article#prijzen {
     background-image: url('../img/bck-bigben.jpg');
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: center top;
     background-size: cover;
     min-height: 65em;
 }
 /*
  * Sixth Page Elements - contact
  */
-article#contact div.page{
-    padding-top: 3em;
+article#contact div.row:first-child div {
+    padding-top: 1em;
 }
-article#contact div#fabienne {
-    padding-left: 0px;
+
+article#contact div.page{
+    padding-top: 1em;
+    background-image: url('/img/fabienne-segaert-portret.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
 }
 article#contact div#contacts {
-    background-image: url('/img/bck-contact-bigben.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding-top: 4em;
-    padding-bottom: 4em;
-    margin-bottom: 0.5em;
-    margin-top: 2em;
-    line-height: 3em;
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 7em;
+}
+article#contact div#contacts img.bg {
+    position: absolute;
+    top: 0px;
+    align-content: center;
+}
+/*
+ * Hidden - page #7 - form
+ */
+article#form {
 }
