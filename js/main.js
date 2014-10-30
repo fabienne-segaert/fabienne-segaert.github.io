@@ -5,10 +5,18 @@
         
         $(".slide-tag").each(function(){
             var $tag = $(this)
-              , $slide = $tag.data('target') || $tag.parents(".slide")
-              , on = false
-              , mlft = $slide.css("margin-left")
+              , target = $tag.data('slide-target')
+              , $slide
+              , mlft
             ;
+            if (target) {
+                $slide = $(target); // search it
+            } else {
+                $slide = $tag.parents(".slide")
+            }
+            mlft = $slide.css("margin-left")
+
+            if ($slide.length == 0) return;
             
             function show() {
                 $slide.animate({"margin-left" : "0px"}, 1000, "swing");
@@ -17,8 +25,10 @@
                 $slide.animate({"margin-left" : mlft}, 1000, "swing");
             }
             $tag.click(function() {
+                var on = $slide.data('slide-on') || false;
                 if (on) { hide(); } else { show(); }
-                on = !on;
+                $slide.data('slide-on', !on);
+                return false;
             });
 
             function shakeIn(fn) {
@@ -30,7 +40,10 @@
             function shake() {
                 shakeIn(shakeOut(shakeIn(shakeOut)));
             }
-            setInterval(shake, 15000);
+
+            if ($tag.is("img") && !target) {
+                setInterval(shake, 15000);
+            }
         });
         
 
