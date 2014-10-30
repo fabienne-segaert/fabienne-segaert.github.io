@@ -3,84 +3,39 @@
     $(function(){
         var $content = $('#content');
         
-        /* Make the single-page scroll work locally
-        --------------------------------------------------------- */
-        var navbarHeight = $('#navbar').height();
-        function filterPath(string) {
-            return string
-                .replace(/^\//,'')                            /* remove leading slash */
-                .replace(/(index|default).[a-zA-Z]{3,4}$/,'') /* remove file.extension */
-                .replace(/\/$/,'');                           /* remove trailing slash */
-        }
-        
-        var $nav = $('nav');
-        function currentHash() {
-            var currentHash = window.location.hash;
-            if (currentHash && currentHash.length) {
-                 return currentHash.slice(1);
-            }
-            //else
-            return;
-        }
-        function activateMenu($menu) {
-            if($menu === undefined) {
-                var name = currentHash();
-                if (name && name.length) {
-                    $menu = targets[name].menu;
-                }
-            }
-            if ($menu.length && $nav.length) {
-                $('.active', $nav).removeClass('active');
-                $menu.addClass('active');
-            }
-        }
-        
-        var targets = {};
-        function gotoHash(hash) {
-            var name = hash || currentHash();
-            if (!(name && name.length && targets[name])) { return; }
-            
-            var targetData = targets[name]
-              , $target    = targetData.target
-              , $menu      = targetData.menu
+        $(".slide-tag").each(function(){
+            var $tag = $(this)
+              , $slide = $tag.data('target') || $tag.parents(".slide")
+              , on = false
+              , mlft = $slide.css("margin-left")
             ;
-            var offset = $target.offset().top - navbarHeight;
             
-            $('html, body').animate({scrollTop: offset}, 1000, "swing", function(){
-                activateMenu();
-            });
-            window.location.hash = name;
-        }
-        
-        $('a[href*=#]').each(function() {
-            var $this = $(this);
-            if ( filterPath(location.pathname) == filterPath(this.pathname)
-                    && location.hostname == this.hostname
-                    && this.hash.replace(/#/,'') 
-               ) {
-                var $targetId     = $(this.hash)
-                  , targetName    = this.hash.slice(1)
-                  , $targetAnchor = $('[name=' + targetName +']')
-                  , $menuItem     = $('a[href=#'+ targetName +']').parent('li')
-                  , $target = $targetId.length ? $targetId : 
-                                $targetAnchor.length ? $targetAnchor : false;
-                if ($target) {
-                    // initialize the set of targets
-                    targets[targetName] = {
-                        target: $target
-                      , menu  : $menuItem
-                    };
-                    // register the onclick
-                    $this.click(function() {
-                        gotoHash(targetName);
-                        return false;
-                    });
-                }
+            function show() {
+                $slide.animate({"margin-left" : "0px"}, 1000, "swing");
             }
+            function hide() {
+                $slide.animate({"margin-left" : mlft}, 1000, "swing");
+            }
+            $tag.click(function() {
+                if (on) { hide(); } else { show(); }
+                on = !on;
+            });
+
+            function shakeIn(fn) {
+                console.log("shake-in");
+                $tag.animate({"margin-left" : "-10px"}, 250, "swing", fn);
+            }
+            function shakeOut(fn) {
+                console.log("shake-out");
+                $tag.animate({"margin-left" : "0px"}, 250, "swing", fn);
+            }
+            function shake() {
+                shakeIn(shakeOut(shakeIn(shakeOut)));
+            }
+            setInterval(shake, 15000);
         });
         
-        gotoHash();
-        
+
         /* Make external links go _blank
         --------------------------------------------------------- */
         var $extLinks = $content.find("a[href^='http']");

@@ -182,9 +182,18 @@ article#contact div#contacts img.bg {
  * Hidden - page #7 - form
  */
 article#form {
+    position: fixed;
+    top: 10%;
+    margin-left: -642px; /* hides this out */
 }
-
-img.tab_horiz {
+article#form div.slide-container {
+    position: relative;
+}
+article#form div.slide-content {
+    float: left;
+}
+article#form img.slide-tag {
+    float: left;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
 }
