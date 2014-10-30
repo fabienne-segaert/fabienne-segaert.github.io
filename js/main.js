@@ -3,6 +3,17 @@
     $(function(){
         var $content = $('#content');
         
+        /* Make external links go _blank
+        --------------------------------------------------------- */
+        var $extLinks = $content.find("a[href^='http']");
+        $extLinks.attr('target', '_blank');
+        $extLinks.each(function(){
+            $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
+        });
+
+
+        /* create slider(s) with pull-tag
+        --------------------------------------------------------- */
         $(".slide-tag").each(function(){
             var $tag = $(this)
               , target = $tag.data('slide-target')
@@ -44,14 +55,6 @@
             if ($tag.is("img") && !target) {
                 setInterval(shake, 15000);
             }
-        });
-
-        /* Make external links go _blank
-        --------------------------------------------------------- */
-        var $extLinks = $content.find("a[href^='http']");
-        $extLinks.attr('target', '_blank');
-        $extLinks.each(function(){
-            $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
         });
 
         /* Add top-clips!
