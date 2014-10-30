@@ -99,7 +99,6 @@ div#slogan div:first-child {
 div#slogan div:last-child {
     text-align: right;
 }
-
 div#opendeur {
     background-image: url('../img/nice-to-meet-you.png');
     background-position: bottom;
@@ -108,8 +107,9 @@ div#opendeur {
     text-align: center;
 }
 div#down {
-    color: rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.5);
     font-size: 2em;
+    height: 3em;
     text-align: center;
 }
 

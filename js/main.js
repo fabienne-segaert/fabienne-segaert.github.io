@@ -42,20 +42,41 @@
                 return false;
             });
 
-            function shakeIn(fn) {
-                $tag.animate({"margin-left" : "-10px"}, 250, "swing", fn);
-            }
-            function shakeOut(fn) {
-                $tag.animate({"margin-left" : "0px"}, 250, "swing", fn);
-            }
-            function shake() {
-                shakeIn(shakeOut(shakeIn(shakeOut)));
-            }
+            if ($tag.is("img") && !target) { // only shake imgs
+                function shakeIn(fn) {
+                    $tag.animate({"margin-left" : "-10px"}, 250, "swing", fn);
+                }
+                function shakeOut(fn) {
+                    $tag.animate({"margin-left" : "0px"}, 250, "swing", fn);
+                }
+                function shake() {
+                    shakeIn(shakeOut(shakeIn(shakeOut)));
+                }
 
-            if ($tag.is("img") && !target) {
-                setInterval(shake, 15000);
+                setInterval(shake, 17000);
             }
         });
+
+
+        /* Shake the arrow-down
+        --------------------------------------------------------- */
+        $("#scrolldown-arrow").each(function() {
+            $arw = $(this).find("span");
+            $arw.css("position", "absolute");
+
+            function shakeDown(fn) {
+                $arw.animate({"margin-top" : "10px"}, 250, "swing", fn);
+            }
+            function shakeUp(fn) {
+                $arw.animate({"margin-top" : "0px"}, 250, "swing", fn);
+            }
+            function shake() {
+                shakeDown(shakeUp(shakeDown(shakeUp)));
+            }
+
+            setInterval(shake, 11000);
+        });
+
 
         /* Add top-clips!
         --------------------------------------------------------- */
