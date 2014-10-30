@@ -22,11 +22,9 @@
             });
 
             function shakeIn(fn) {
-                console.log("shake-in");
                 $tag.animate({"margin-left" : "-10px"}, 250, "swing", fn);
             }
             function shakeOut(fn) {
-                console.log("shake-out");
                 $tag.animate({"margin-left" : "0px"}, 250, "swing", fn);
             }
             function shake() {
