@@ -69,6 +69,18 @@ a:hover {
     color: inherit;
 }
 
+.container {
+    position: relative;
+}
+article div.top-clips {
+    position: absolute;
+    top: -4.6em;
+    right: 2em;
+}
+article img.top-clip {
+    max-height: 13em;
+}
+
 /*
  *  First page elements -- Welcome
  */
@@ -141,8 +153,11 @@ article#aanbod div#gratis {
  * Fourth Page Elements - troeven
  */
 article#troeven {
-    padding-top: 9em;
-    padding-bottom: 5em;
+}
+
+article#troeven ul {
+    padding-top: 5em;
+    padding-bottom: 3em;
 }
 /*
  * Fifth Page Elements - prijzen
@@ -153,7 +168,13 @@ article#prijzen {
     background-position: center top;
     background-size: cover;
     min-height: 65em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+article#prijzen div.row div {
+    padding-top: 2em;
+}
+
 /*
  * Sixth Page Elements - contact
  */

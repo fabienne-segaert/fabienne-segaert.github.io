@@ -45,7 +45,6 @@
                 setInterval(shake, 15000);
             }
         });
-        
 
         /* Make external links go _blank
         --------------------------------------------------------- */
@@ -54,5 +53,25 @@
         $extLinks.each(function(){
             $(this).append(' <span class="glyphicon glyphicon-new-window"></span>');
         });
+
+        /* Add top-clips!
+        --------------------------------------------------------- */
+        $("[data-clips]").each(function() {
+            var $tgt = $(this)
+              , clips = $tgt.data('clips')
+              , links = $("body").data('links')
+            ;
+            $div = $('<div class="top-clips">');
+            clips.forEach(function(name, i){
+                var link = links[name];
+                if (!link) {
+                    $div.append('<img class="top-clip" src="/img/clip-'+name+'.png">');
+                } else {
+                    $div.append('<a target="_blank" href="'+link+'"><img class="top-clip" src="/img/clip-'+name+'.png"></a>');
+                }
+            });
+            $tgt.append($div);
+        });
+
     });
 })(jQuery);

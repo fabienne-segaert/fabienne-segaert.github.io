@@ -45,7 +45,7 @@
 
   </head>
     
-  <body data-spy="scroll" data-target=".navbar-spy">
+  <body data-links='{{ site.links | jsonify }}'>
     <div id="content">
         {{ content }} 
     </div> <!-- /container -->      
