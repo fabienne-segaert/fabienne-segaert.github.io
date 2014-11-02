@@ -74,11 +74,11 @@ a:hover {
 }
 article div.top-clips {
     position: absolute;
-    top: -4.6em;
+    top: -3.2em;
     right: 2em;
 }
 article img.top-clip {
-    max-height: 13em;
+    max-height: 9em;
 }
 
 /*
