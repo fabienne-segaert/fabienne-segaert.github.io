@@ -56,9 +56,9 @@ article {
  * ----------- font-styles
  */
 .fnt_wht {            color: rgba( 255, 255, 255, 1.00); }
-.fnt_ylw {            color: rgba( 219, 212,   0, 1.00); }
-.fnt_grn {            color: rgba(  47, 179, 166, 1.00); }
-.fnt_red {            color: rgba( 228,  33, 105, 1.00); }
+.fnt_ylw {            color: rgba( 230, 223,   6, 1.00); }
+.fnt_grn {            color: rgba(  75, 166, 163, 1.00); }
+.fnt_red {            color: rgba( 196,  38, 103, 1.00); }
 .fnt_gry {            color: rgba( 127, 127, 127, 1.00); }
 
 .fnt_awe      {    font-family: "FontAwesome";   }
@@ -104,9 +104,9 @@ body {
     background: rgba( 255, 255, 255, 0.95);
 }
 
-.bck_ylw { background-color: rgba( 219, 212,   0, 1.00); }
-.bck_grn { background-color: rgba(  47, 179, 166, 1.00); }
-.bck_red { background-color: rgba( 228,  33, 105, 1.00); }
+.bck_ylw { background-color: rgba( 230, 223,   6, 1.00); }
+.bck_grn { background-color: rgba(  75, 166, 163, 1.00); }
+.bck_red { background-color: rgba( 196,  38, 103, 1.00); }
 .bck_wht { background-color: rgba( 255, 255, 255, 1.00); }
 
 
