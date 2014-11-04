@@ -108,6 +108,7 @@ body {
 .bck_grn { background-color: rgba(  75, 166, 163, 1.00); }
 .bck_red { background-color: rgba( 196,  38, 103, 1.00); }
 .bck_wht { background-color: rgba( 255, 255, 255, 1.00); }
+.bck_trnsp { background-color: transparent; }
 
 
 img {
@@ -172,8 +173,8 @@ div#down {
  */
 article#quotes > div.container {
     position: absolute;
-    bottom: 0;
-    padding-bottom: 2em;
+    bottom: 10em;
+    width: 100%
 }
 div#quotes {
     position: relative;
@@ -209,7 +210,11 @@ article#aanbod div#gratis {
 /*
  * Fourth Page Elements - troeven
  */
-article#troeven {
+
+article#troeven > div.container {
+    position: absolute;
+    bottom: 10em;
+    width: 100%
 }
 
 article#troeven ul {

@@ -68,17 +68,7 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
       
-	<script type="text/javascript" src="/js/skrollr.min.js"></script>
-	<script type="text/javascript">
-	skrollr.init({
-		smoothScrolling: false
-      , mobileDeceleration: 0.004
-      , constants: {
-          box: "150p"
-      }
-	});
-	</script>
-      
+    {% include skrollr.html %}
     {% include ga.html %}
   </body>
 </html>
