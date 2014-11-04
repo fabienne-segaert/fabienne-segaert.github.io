@@ -1,6 +1,60 @@
 @import url("bootstrap.min.css");
 @import url("../fonts/stylesheet.css");
 
+/*
+ * ----------- Basic init
+ */
+* {
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    width:100%;
+    height:100%;
+}
+
+/*
+ * ----------- Skrollr stuff and such
+ */
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+.gap-50 {
+    height:50%;
+}
+
+.gap-100 {
+    height:100%;
+}
+
+article {
+    display: block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.box {
+    position:absolute;
+    left:0;
+    height:100%;
+}
+
+/*
+ * ----------- font-styles
+ */
 .fnt_wht {            color: rgba( 255, 255, 255, 1.00); }
 .fnt_ylw {            color: rgba( 219, 212,   0, 1.00); }
 .fnt_grn {            color: rgba(  47, 179, 166, 1.00); }
@@ -116,10 +170,13 @@ div#down {
 /*
  * Second Page Elements -- Quotes carousel
  */
-article#quotes {
-    margin-top: 15em;
+article#quotes > div.container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2em;
 }
 div#quotes {
+    position: relative;
     margin-top: 1px;
     padding-top: 5.5em;
     padding-bottom: 2em;
