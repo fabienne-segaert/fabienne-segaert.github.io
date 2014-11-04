@@ -240,6 +240,9 @@ article#prijzen div.row div {
 /*
  * Sixth Page Elements - contact
  */
+article#contact {
+}
+
 article#contact div.row:first-child div {
     padding-top: 1em;
 }
@@ -266,6 +269,7 @@ article#contact div#contacts img.bg {
  */
 article#form {
     position: fixed;
+    width: auto;
     top: 10%;
     margin-left: -642px; /* hides this out */
 }
