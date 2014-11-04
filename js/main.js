@@ -60,8 +60,8 @@
 
         /* Shake the arrow-down
         --------------------------------------------------------- */
-        $("#scrolldown-arrow").each(function() {
-            $arw = $(this).find("span");
+        $("#scrolldown-arrow > span").each(function() {
+            $arw = $(this);
             $arw.css("position", "absolute");
 
             function shakeDown(fn) {
