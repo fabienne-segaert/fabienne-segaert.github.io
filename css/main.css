@@ -1,6 +1,60 @@
 @import url("bootstrap.min.css");
 @import url("../fonts/stylesheet.css");
 
+/*
+ * ----------- Basic init
+ */
+* {
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    width:100%;
+    height:100%;
+}
+
+/*
+ * ----------- Skrollr stuff and such
+ */
+
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.skrollr .gap {
+    background:transparent !important;
+}
+
+.gap-50 {
+    height:50%;
+}
+
+.gap-100 {
+    height:100%;
+}
+
+article {
+    display: block;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:transparent center no-repeat;
+    background-size:cover;
+}
+
+.box {
+    position:absolute;
+    left:0;
+    height:100%;
+}
+
+/*
+ * ----------- font-styles
+ */
 .fnt_wht {            color: rgba( 255, 255, 255, 1.00); }
 .fnt_ylw {            color: rgba( 230, 223,   6, 1.00); }
 .fnt_grn {            color: rgba(  75, 166, 163, 1.00); }
@@ -54,6 +108,7 @@ body {
 .bck_grn { background-color: rgba(  75, 166, 163, 1.00); }
 .bck_red { background-color: rgba( 196,  38, 103, 1.00); }
 .bck_wht { background-color: rgba( 255, 255, 255, 1.00); }
+.bck_trnsp { background-color: transparent; }
 
 
 img {
@@ -116,10 +171,13 @@ div#down {
 /*
  * Second Page Elements -- Quotes carousel
  */
-article#quotes {
-    margin-top: 15em;
+article#quotes > div.container {
+    position: absolute;
+    bottom: 10em;
+    width: 100%
 }
 div#quotes {
+    position: relative;
     margin-top: 1px;
     padding-top: 5.5em;
     padding-bottom: 2em;
@@ -152,7 +210,11 @@ article#aanbod div#gratis {
 /*
  * Fourth Page Elements - troeven
  */
-article#troeven {
+
+article#troeven > div.container {
+    position: absolute;
+    bottom: 10em;
+    width: 100%
 }
 
 article#troeven ul {
@@ -178,6 +240,9 @@ article#prijzen div.row div {
 /*
  * Sixth Page Elements - contact
  */
+article#contact {
+}
+
 article#contact div.row:first-child div {
     padding-top: 1em;
 }
@@ -204,6 +269,7 @@ article#contact div#contacts img.bg {
  */
 article#form {
     position: fixed;
+    width: auto;
     top: 10%;
     margin-left: -642px; /* hides this out */
 }

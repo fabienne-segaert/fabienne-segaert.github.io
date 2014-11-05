@@ -2,30 +2,65 @@
 title: Let's Talk taalcoaching
 layout: default
 ---
-<article name="welkom" id="welkom" >
+<article name="welkom" id="welkom" 
+        data-0="transform:translate(0,0%);" 
+        data-100p="transform:translate(0,-105%);"
+>
 <div class="container page" data-clips='["social-fb", "social-tw", "social-in"]'>
     {% include welkom.html %}
 </div>
 </article>
 
-<article class="page bck_grn" name="quotes" id="quotes" >
-<div class="container">{% include quotes.html %}</div>
+<article class="page bck_trnsp" name="quotes" id="quotes"
+         data-0="transform:translate(0,105%);"
+         data-110p="transform:translate(0,0%)"
+         data-210p="transform:translate(0,0%)"
+         data-310p="transform:translate(0,-105%)"
+>
+    <div class="container bck_grn">{% include quotes.html %}</div>
 </article>
 
-<article class="page" name="aanbod" id="aanbod"  >
-<div class="container">{% include aanbod.html %}</div>
+<article class="page" name="aanbod" id="aanbod"  
+         data-120p="transform:translate(105%, 0);"
+         data-220p="transform:translate(0%,0);"
+         data-320p="transform:translate(-105%, 0);"
+ >
+<!-- use these to slide in from bottom
+         data-120p="transform:translate(0, 105%);"
+         data-220p="transform:translate(0,0%);"
+         data-320p="transform:translate(0,-105%);"
+-->
+    <div class="container">{% include aanbod.html %}</div>
 </article>
 
-<article class="page bck_grn" name="troeven" id="troeven" >
-<div class="container" data-clips='["bijzonder"]'>{% include troeven.html %}</div>
+<article class="page bck_trnsp" name="troeven" id="troeven"
+         data-230p="transform:translate(0,105%);"
+         data-330p="transform:translate(0,0%);"
+         data-460p="transform:translate(0,0%)"
+         data-560p="transform:translate(0,-105%)"
+>
+    <div class="container bck_grn" data-clips='["bijzonder"]'>{% include troeven.html %}</div>
 </article>
 
-<article class="page bck_grn" name="prijzen" id="prijzen" >
-<div class="container" >{% include prijzen.html %}</div>
+<article class="page" name="prijzen" id="prijzen"
+         data-340p="transform:translate(0, 105%)"
+         data-440p="transform:translate(0,0%)"
+         data-470p="transform:translate(0,0%)"
+         data-570p="transform:translate(0, -105%)"
+>
+<!-- use these to slide in from left
+         data-340p="transform:translate(-105%, 0)"
+         data-440p="transform:translate(0%,0)"
+         data-540p="transform:translate(105%, 0)"
+-->
+    <div class="container" >{% include prijzen.html %}</div>
 </article>
 
-<article name="contact" id="contact" >
-<div class="container page bck_wht" data-clips='["social-fb", "social-tw", "social-in"]'>{% include contact.html %}</div>
+<article name="contact" id="contact" 
+         data-500p="transform:translate(0,105%)"
+         data-600p="transform:translate(0,0%)"
+>
+    <div class="container page bck_wht" data-clips='["social-fb", "social-tw", "social-in"]'>{% include contact.html %}</div>
 </article>
 
 <article name="form" id="form" class="slide bck_ylw">
