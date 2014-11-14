@@ -74,6 +74,7 @@ article {
 .fnt_sans500  {    font-family: "MuseoSans500";  }
 .fnt_sans700  {    font-family: "MuseoSans700";  }
 .fnt_sans900  {    font-family: "MuseoSans900";  }
+.fnt_stl_em   {    font-style: italic; }
 .fnt_s12      {    font-size: 1.00em; }
 .fnt_s14      {    font-size: 1.17em; }
 .fnt_s16      {    font-size: 1.33em; }
