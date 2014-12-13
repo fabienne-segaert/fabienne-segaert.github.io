@@ -172,12 +172,12 @@ div#down {
 /*
  * Second Page Elements -- Quotes carousel
  */
-article#quotes > div.container {
+article > div.container.full {
     position: absolute;
     bottom: 10em;
     width: 100%
 }
-div#quotes {
+div.quotes {
     position: relative;
     margin-top: 1px;
     padding-top: 5.5em;
@@ -189,6 +189,15 @@ div#quotes {
 #quotes .item {
     padding-bottom: 1em;
     min-height: 4.5em;
+}
+
+.bck_wht .carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.bck_wht .carousel-indicators .active {
+  background-color: #444;
 }
 
 /*

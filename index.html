@@ -17,15 +17,10 @@ layout: default
          data-210p="transform:translate(0,0%)"
          data-310p="transform:translate(0,-105%)"
 >
-    <div class="container bck_grn">{% include quotes.html %}</div>
+    <div class="full container bck_grn">{% include quotes.html %}</div>
 </article>
 
-<article class="page" name="aanbod" id="aanbod"  
-         data-120p="transform:translate(105%, 0);"
-         data-220p="transform:translate(0%,0);"
-         data-320p="transform:translate(-105%, 0);"
- >
-<!-- use these to slide in from bottom
+<article class="page" name="aanbod" id="aanbod"
          data-120p="transform:translate(0, 105%);"
          data-220p="transform:translate(0,0%);"
          data-320p="transform:translate(0,-105%);"
@@ -48,13 +43,23 @@ layout: default
          data-470p="transform:translate(0,0%)"
          data-570p="transform:translate(0, -105%)"
 >
-<!-- use these to slide in from left
-         data-340p="transform:translate(-105%, 0)"
-         data-440p="transform:translate(0%,0)"
-         data-540p="transform:translate(105%, 0)"
--->
     <div class="container" >{% include prijzen.html %}</div>
 </article>
+
+
+<!--
+ TODO include article ==> cursusaanbod
+ TODO include article ==> klantenreacties
+<article class="page bck_trnsp" name="reacties" id="reacties"
+         data-570="transform:translate(0,105%);"
+         data-670p="transform:translate(0,0%)"
+         data-700p="transform:translate(0,0%)"
+         data-800p="transform:translate(0,-105%)"
+>
+    <div class="full container bck_wht">{--% include reacties.html %}</div>
+</article>
+-->
+
 
 <article name="contact" id="contact" 
          data-500p="transform:translate(0,105%)"
