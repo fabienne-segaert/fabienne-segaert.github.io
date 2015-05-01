@@ -273,6 +273,7 @@ article#contact div#contacts {
 article#contact div#contacts img.bg {
     position: absolute;
     top: 0px;
+    left: 0px;
     align-content: center;
 }
 /*
