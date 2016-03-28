@@ -1,9 +1,8 @@
 name: Let's Talk Taalcoaching
 
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-highlighter: pygments
 
 description: Taallessen engels voor iedereen
 url: http://www.lets-talk-taalcoaching.be
